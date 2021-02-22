@@ -1,0 +1,26 @@
+.topic {
+  font-family: PT Serif;
+  font-size: 66px;
+  font-style: bold;
+}
+
+.paragraf {
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+}
+
+button {
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  color: #fff;
+  background-color: rgba(0, 86, 236, 1);
+  width: 270.75px;
+  height: 57px;
+}
+
+.menu {
+  font-family: Roboto;
+  font-size: 18px;
+}
