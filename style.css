@@ -1,16 +1,16 @@
-.topic {
+.main-content__topic {
   font-family: PT Serif;
   font-size: 66px;
   font-style: bold;
 }
 
-.paragraf {
+.main-content__text {
   font-family: Roboto;
   font-size: 22px;
   font-style: normal;
 }
 
-button {
+.main-content__button {
   font-family: Roboto;
   font-size: 18px;
   font-style: normal;
