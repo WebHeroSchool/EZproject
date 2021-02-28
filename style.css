@@ -13,6 +13,27 @@
 .logo {
   margin-right: 62%;
   padding: 40px 0;
+  padding-left: 44px;
+  font: 700 24px/31px 'PT Serif';
+  position: relative;
+}
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: rgba(200, 219, 251, 1);
+  opacity: .7;
+}
+.logo__circle_color_dark-blue {
+  background: rgba(0, 86, 236, 1);
 }
 .menu {
   display: flex;
@@ -34,9 +55,10 @@
   align-items: center;
 }
 .main-content__topic {
-  font-family: PT Serif;
+  font-family: 'PT Serif';
+  font-weight: 700;
   font-size: 66px;
-  font-style: bold;
+  font-style: normal;
   margin-right: 13%;
 }
 .main-content__text {
@@ -55,4 +77,5 @@
   background-color: rgba(0, 86, 236, 1);
   width: 271px;
   height: 57px;
+  border-radius: 4px;
 }
