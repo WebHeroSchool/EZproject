@@ -8,7 +8,7 @@
 .top-part {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12%;
+  margin-bottom: 8%;
 }
 .logo {
   margin-right: 62%;
@@ -68,28 +68,35 @@
   opacity: 1;
   width: 100%;
 }
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.main {
+  padding: 0 63% 17% 0;
+  background: top right no-repeat url('mainimg.svg');
 }
-.main-content__topic {
+.main__topic {
+  padding-top: 76px;
   font: 700 66px/88px 'PT Serif';
   font-style: normal;
-  margin-right: 13%;
+  margin: 0 0 40px 0;
 }
-.main-content__text {
+.main__text {
   font: 400 22px/26px Roboto;
   font-style: normal;
-  padding: 40px 0;
-  margin-right: 40%;
+  margin: 0 0 59px 0;
+  padding-right: 20%;
 }
-.main-content__button {
+.main__button {
   font: 500 18px/21px Roboto;
   font-style: normal;
   color: #fff;
   background-color: rgba(0, 86, 236, 1);
-  width: 271px;
-  height: 57px;
+  padding: 18px 21px;
   border-radius: 4px;
+  transition: opacity .7s ease;
+  text-decoration: none;
+}
+.main__button:hover {
+  opacity: .5;
+}
+.main__topic-text_highlight {
+  background: #ECF3FF;
 }
