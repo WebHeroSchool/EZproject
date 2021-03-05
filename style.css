@@ -1,26 +1,102 @@
-.main-content__topic {
-  font-family: PT Serif;
-  font-size: 66px;
-  font-style: bold;
+* {
+  margin: 0;
 }
-
-.main-content__text {
-  font-family: Roboto;
-  font-size: 22px;
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.top-part {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8%;
+}
+.logo {
+  margin-right: 62%;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: 700 24px/31px 'PT Serif';
+  position: relative;
+}
+.logo__circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: rgba(200, 219, 251, 1);
+  opacity: .7;
+}
+.logo__circle_color_dark-blue {
+  background: rgba(0, 86, 236, 1);
+}
+.menu {
+  display: flex;
+  align-items: center;
+  font: 600 18px/21px Roboto;
+}
+.menu__item {
+  margin-right: 26px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  transition: opacity .7s ease;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #0056EC;
+  opacity: 0;
+  transition: opacity .7s ease, width .5s ease;
+}
+.menu__item:hover {
+  opacity: .7;
+}
+.menu__item:hover::after, .menu__item_active::after {
+  opacity: 1;
+  width: 100%;
+}
+.main {
+  padding: 0 63% 17% 0;
+  background: top right no-repeat url('mainimg.svg');
+}
+.main__topic {
+  padding-top: 76px;
+  font: 700 66px/88px 'PT Serif';
   font-style: normal;
+  margin: 0 0 40px 0;
 }
-
-.main-content__button {
-  font-family: Roboto;
-  font-size: 18px;
+.main__text {
+  font: 400 22px/26px Roboto;
+  font-style: normal;
+  margin: 0 0 59px 0;
+  padding-right: 20%;
+}
+.main__button {
+  font: 500 18px/21px Roboto;
   font-style: normal;
   color: #fff;
   background-color: rgba(0, 86, 236, 1);
-  width: 270.75px;
-  height: 57px;
+  padding: 18px 21px;
+  border-radius: 4px;
+  transition: opacity .7s ease;
+  text-decoration: none;
 }
-
-.menu {
-  font-family: Roboto;
-  font-size: 18px;
+.main__button:hover {
+  opacity: .5;
+}
+.main__topic-text_highlight {
+  background: #ECF3FF;
 }
