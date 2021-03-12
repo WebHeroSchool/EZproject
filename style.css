@@ -99,10 +99,51 @@
     border-radius: 4px;
     transition: opacity .7s ease;
     text-decoration: none;
+    position: relative;
   }
-  .main__button:hover {
-    opacity: .5;
+  .tooltiptext {
+    opacity: 0;
+    width: 270px;
+    background-color: rgba(0, 86, 236, 1);
+    color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-22%);
+    left: 105%;
+    padding: 3%;
+    font: 500 18px/20px Roboto;
+    animation: tooltip 15s ease-in-out 1 alternate;
   }
+  .main__button:hover .tooltiptext{
+    opacity: .7;
+  }
+
+  @keyframes tooltip {
+      from {
+        left: 105%;
+        transform: translateY(200%);
+        opacity: 0;
+        animation-timing-function: ease-out;
+      }
+      25% {
+        transform: translateY(-22%);
+        left: 105%;
+        opacity: .7;
+      }
+      75% {
+        transform: translateY(-22%);
+        left: 105%;
+        opacity: .7;
+      }
+      to {
+        left: 105%;
+        transform: translateY(200%);
+        opacity: 0;
+        animation-timing-function: ease-out;
+      }
+    }
+
   .main__topic-text_highlight {
     background: #ECF3FF;
   }
@@ -209,6 +250,9 @@
   }
   .main__button:hover {
     opacity: .5;
+  }
+  .tooltiptext {
+    display: none;
   }
   .main__topic-text_highlight {
     background: #ECF3FF;
@@ -317,6 +361,9 @@
   .main__button:hover {
     opacity: .5;
   }
+  .tooltiptext {
+    display: none;
+  }
   .main__topic-text_highlight {
     background: #ECF3FF;
   }
@@ -424,6 +471,9 @@
   .main__button:hover {
     opacity: .5;
   }
+  .tooltiptext {
+    display: none;
+  }
   .main__topic-text_highlight {
     background: #ECF3FF;
   }
@@ -493,6 +543,9 @@
   }
   .main__button:hover {
     opacity: .5;
+  }
+  .tooltiptext {
+    display: none;
   }
   .main__topic-text_highlight {
     background: #ECF3FF;
