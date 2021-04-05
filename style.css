@@ -308,7 +308,7 @@
     transition: opacity .7s ease;
   }
   .menu__item:last-child {
-    margin-right: 0px;
+    margin-right: 0;
   }
   .menu__item::after {
     display: block;
